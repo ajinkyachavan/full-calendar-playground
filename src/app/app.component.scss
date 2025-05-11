@@ -1,0 +1,38 @@
+#calendar {
+  width: 50%;
+}
+
+::ng-deep {
+
+  .fc-day-selected {
+    background-color: #ffeb3b !important;
+    /* yellow, override default */
+    border-radius: 2em;
+  }
+
+  .fc-event {
+    border-radius: 2em;
+    // width: 50%;
+    width: 100%;
+    margin-inline: 0.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+  }
+
+  .fc-daygrid-event-harness {
+    display: inline-flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fc-timegrid-event-harness {
+    width: 50% !important;
+    /* 2 events per row */
+    left: 0 !important;
+    margin-right: 2px;
+    /* optional spacing */
+  }
+}
